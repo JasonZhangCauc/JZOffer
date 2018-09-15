@@ -3,7 +3,6 @@
 剑指offer编程全部试题，java实现
 ===============
 
-每天读到一些不错的技术文章，随手点评收录，分享给大家！想知道更多关于每日精选的信息，请查看我们的[wiki](https://github.com/DiyCodes/code_news/wiki)
 
 归档
 ----
