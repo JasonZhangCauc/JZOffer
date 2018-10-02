@@ -1,28 +1,28 @@
 /**
- * ÊäÈëÁ½¸öµ¥µ÷µİÔöµÄÁ´±í£¬Êä³öÁ½¸öÁ´±íºÏ³ÉºóµÄÁ´±í£¬ µ±È»ÎÒÃÇĞèÒªºÏ³ÉºóµÄÁ´±íÂú×ãµ¥µ÷²»¼õ¹æÔò¡£
+ * è¾“å…¥ä¸¤ä¸ªå•è°ƒé€’å¢çš„é“¾è¡¨ï¼Œè¾“å‡ºä¸¤ä¸ªé“¾è¡¨åˆæˆåçš„é“¾è¡¨ï¼Œ å½“ç„¶æˆ‘ä»¬éœ€è¦åˆæˆåçš„é“¾è¡¨æ»¡è¶³å•è°ƒä¸å‡è§„åˆ™ã€‚
  * 
  */
 public class Test16 {
 	public static ListNode Merge(ListNode list1, ListNode list2) {
-		if (list1 == null) { // Ê×ÏÈÅĞ¶ÏÊÇ·ñÓĞÁ´±íÎª¿Õ
+		if (list1 == null) { // é¦–å…ˆåˆ¤æ–­æ˜¯å¦æœ‰é“¾è¡¨ä¸ºç©º
 			return list2;
 		} else if (list2 == null) {
 			return list1;
 		}
 		ListNode end1 = list1;
 		ListNode end2 = list2;
-		ListNode tmp;		//end1ºÍend2·Ö±ğ´ú±íÁ½¸öÁ´±í£¬tmpÓÃÓÚÖĞ¼äºÏ³ÉÁ´±í
+		ListNode tmp;		//end1å’Œend2åˆ†åˆ«ä»£è¡¨ä¸¤ä¸ªé“¾è¡¨ï¼Œtmpç”¨äºä¸­é—´åˆæˆé“¾è¡¨
 		
-		if (end1.val > end2.val) {//°ÑÊ×½ÚµãĞ¡µÄÁ´±í¿´×÷end1
+		if (end1.val > end2.val) {//æŠŠé¦–èŠ‚ç‚¹å°çš„é“¾è¡¨çœ‹ä½œend1
 			tmp = end1;
 			end1 = end2;
 			end2 = tmp;
 		} else {
 
 		}
-		ListNode newNode = end1;//ÓÃÓÚ×îÖÕ·µ»ØµÄÁ´±íÊ×½Úµã
+		ListNode newNode = end1;//ç”¨äºæœ€ç»ˆè¿”å›çš„é“¾è¡¨é¦–èŠ‚ç‚¹
 
-		while (end1.next != null && end2.next != null) {   //½«Á´±í2ÖĞµÄÔªËØ²åÈëÁ´±í1ÖĞºÏÊÊµÄÎ»ÖÃ
+		while (end1.next != null && end2.next != null) {   //å°†é“¾è¡¨2ä¸­çš„å…ƒç´ æ’å…¥é“¾è¡¨1ä¸­åˆé€‚çš„ä½ç½®
 			if (end1.val <= end2.val && end1.next.val >= end2.val) {
 				tmp = end2.next;
 				end2.next = end1.next;
@@ -34,11 +34,11 @@ public class Test16 {
 			}
 		}
 		
-		if (end1.next == null) {//Èç¹ûÁ´±í1µ½Î²½ÚµãÁËÔòÖ±½ÓÁ¬½ÓÊ£ÏÂµÄÁ´±í2ÖĞµÄÊ×½Úµã
+		if (end1.next == null) {//å¦‚æœé“¾è¡¨1åˆ°å°¾èŠ‚ç‚¹äº†åˆ™ç›´æ¥è¿æ¥å‰©ä¸‹çš„é“¾è¡¨2ä¸­çš„é¦–èŠ‚ç‚¹
 			end1.next = end2;
 			return newNode;
 		} else {
-			if (end1.next != null && end2.next == null) {//Èç¹ûÁ´±í2µ½Î²½ÚµãÁËÔò½«Á´±í2ÖĞËùÊ£ÏÂµÄ×îºóÒ»¸ö½Úµã²åÈëÁ´±í1
+			if (end1.next != null && end2.next == null) {//å¦‚æœé“¾è¡¨2åˆ°å°¾èŠ‚ç‚¹äº†åˆ™å°†é“¾è¡¨2ä¸­æ‰€å‰©ä¸‹çš„æœ€åä¸€ä¸ªèŠ‚ç‚¹æ’å…¥é“¾è¡¨1
 				while (end2 != null) {
 					if (end1.val <= end2.val && end1.next.val >= end2.val) {
 						end2.next = end1.next;
@@ -46,7 +46,7 @@ public class Test16 {
 						break;
 					} else {
 						end1 = end1.next;
-						if (end1.next == null) {//Á´±í2×îºóµÄ½Úµã×î´ó
+						if (end1.next == null) {//é“¾è¡¨2æœ€åçš„èŠ‚ç‚¹æœ€å¤§
 							end1.next = end2;
 							break;
 						}
@@ -67,7 +67,7 @@ public class Test16 {
 		System.out.println(Merge(list2, list1));
 	}
 
-	// Á´±í
+	// é“¾è¡¨
 	public static class ListNode {
 		int val;
 		ListNode next = null;

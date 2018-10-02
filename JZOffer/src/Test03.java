@@ -3,18 +3,18 @@ import java.util.Stack;
 
 /**
  * 
- * ÊäÈëÒ»¸öÁ´±í£¬°´Á´±íÖµ´ÓÎ²µ½Í·µÄË³Ğò·µ»ØÒ»¸öArrayList¡£
+ * è¾“å…¥ä¸€ä¸ªé“¾è¡¨ï¼ŒæŒ‰é“¾è¡¨å€¼ä»å°¾åˆ°å¤´çš„é¡ºåºè¿”å›ä¸€ä¸ªArrayListã€‚
  *
  */
 public class Test03 {
-	//ÀûÓÃÕ»Íê³É
+	//åˆ©ç”¨æ ˆå®Œæˆ
 	public static ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
 			ArrayList<Integer> arrayList=new ArrayList<Integer>();
 			Stack<ListNode> stack = new Stack<>();
 	        while (listNode != null) {
 	            stack.push(listNode);
 	            listNode = listNode.next;
-	        }
+	        }	
 	        ListNode tmp;
 	        while (!stack.isEmpty()) {
 	            tmp = stack.pop();
@@ -23,7 +23,7 @@ public class Test03 {
 			return arrayList;
 	        
 	    }
-	//²âÊÔ³ÌĞò¶Î
+	//æµ‹è¯•ç¨‹åºæ®µ
 	public static void main(String[] args) {
 		ListNode test=new ListNode(0);
 		test.next=new ListNode(1).next=new ListNode(2);
@@ -34,7 +34,7 @@ public class Test03 {
 	}
 
 }
-	//Á´±í
+	//é“¾è¡¨
     class ListNode {
         int val;
         ListNode next = null;

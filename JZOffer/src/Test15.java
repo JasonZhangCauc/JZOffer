@@ -1,7 +1,7 @@
 
 /**
  * 
- * ÊäÈëÒ»¸öÁ´±í£¬·´×ªÁ´±íºó£¬Êä³öĞÂÁ´±íµÄ±íÍ·¡£
+ * è¾“å…¥ä¸€ä¸ªé“¾è¡¨ï¼Œåè½¬é“¾è¡¨åï¼Œè¾“å‡ºæ–°é“¾è¡¨çš„è¡¨å¤´ã€‚
  *
  */
 public class Test15 {
@@ -14,17 +14,19 @@ public class Test15 {
     	ListNode pre=null;
     	while(head!=null) {
     		tmp=head.next;
+    		
     		head.next=pre;
     		if(tmp==null) 
     			new_node=head;
     		pre=head;
+    		
     		head=tmp;
     	}
     	
     	return new_node;
 
     }
-    //Ìâ×Ô´ø
+    //é¢˜è‡ªå¸¦
     public class ListNode {
         int val;
         ListNode next = null;

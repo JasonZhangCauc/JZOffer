@@ -1,16 +1,16 @@
 import java.util.Stack;
 /**
  * 
- * ÓÃÁ½¸öÕ»À´ÊµÏÖÒ»¸ö¶ÓÁĞ£¬Íê³É¶ÓÁĞµÄPushºÍPop²Ù×÷¡£ ¶ÓÁĞÖĞµÄÔªËØÎªintÀàĞÍ¡£
+ * ç”¨ä¸¤ä¸ªæ ˆæ¥å®ç°ä¸€ä¸ªé˜Ÿåˆ—ï¼Œå®Œæˆé˜Ÿåˆ—çš„Pushå’ŒPopæ“ä½œã€‚ é˜Ÿåˆ—ä¸­çš„å…ƒç´ ä¸ºintç±»å‹ã€‚
  *
  */
 public class Test05 {
 
-    Stack<Integer> stack1 = new Stack<Integer>();//¹¤¾ßÕ»
-    Stack<Integer> stack2 = new Stack<Integer>();//´ú¶ÓÁĞÕ»
+    Stack<Integer> stack1 = new Stack<Integer>();//å·¥å…·æ ˆ
+    Stack<Integer> stack2 = new Stack<Integer>();//ä»£é˜Ÿåˆ—æ ˆ
    
     public void push(int node) {
-        while(!stack2.isEmpty()) {//Ã¿´Î³ö¶ÓÁĞÊ±½«ÖØĞÂ½«Õ»2ÖĞµÄÔªËØÑ¹»ØÕ»1
+        while(!stack2.isEmpty()) {//æ¯æ¬¡å‡ºé˜Ÿåˆ—æ—¶å°†é‡æ–°å°†æ ˆ2ä¸­çš„å…ƒç´ å‹å›æ ˆ1
         	stack1.push(stack2.pop());
         }
     	stack1.push(node);

@@ -1,17 +1,17 @@
 /**
  * 
- * ÊäÈëÒ»¸öÁ´±í£¬Êä³ö¸ÃÁ´±íÖÐµ¹ÊýµÚk¸ö½áµã¡£
+ * è¾“å…¥ä¸€ä¸ªé“¾è¡¨ï¼Œè¾“å‡ºè¯¥é“¾è¡¨ä¸­å€’æ•°ç¬¬kä¸ªç»“ç‚¹ã€‚
  *
  */
 public class Test14 {
-	//¶¨ÒåÁ½¸ö¿ìÂýÖ¸Õë£¬¿ìÖ¸ÕëÏÈ×ßk²½£¬Á½¸öÒ»Æð×ß£¬¿ìÖ¸ÕëÖ¸Ïò¿ÕÂýÖ¸ÕëÎ»ÖÃ¼´Îªµ¹ÊýµÚk¸ö½áµã
+	//å®šä¹‰ä¸¤ä¸ªå¿«æ…¢æŒ‡é’ˆï¼Œå¿«æŒ‡é’ˆå…ˆèµ°kæ­¥ï¼Œä¸¤ä¸ªä¸€èµ·èµ°ï¼Œå¿«æŒ‡é’ˆæŒ‡å‘ç©ºæ…¢æŒ‡é’ˆä½ç½®å³ä¸ºå€’æ•°ç¬¬kä¸ªç»“ç‚¹
 	public ListNode FindKthToTail(ListNode head,int k) {
 		if(head==null||k<1) {
 			return null;
 		}
 		ListNode fast = head,slow=head;
 		
-		for(int i=1;i<k;i++) {//k¹ý´ó
+		for(int i=1;i<k;i++) {//kè¿‡å¤§
 			if(fast.next!=null) {
 				fast=fast.next;
 			}else {
@@ -25,7 +25,7 @@ public class Test14 {
 		return slow;
 
     }
-	//ÏµÍ³×Ô´ø
+	//ç³»ç»Ÿè‡ªå¸¦
 	public class ListNode {
 	    int val;
 	    ListNode next = null;

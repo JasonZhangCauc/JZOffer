@@ -1,10 +1,10 @@
 /**
  * 
- * ¸ø¶¨Ò»¸ödoubleÀàĞÍµÄ¸¡µãÊıbaseºÍintÀàĞÍµÄÕûÊıexponent¡£ÇóbaseµÄexponent´Î·½¡£
+ * ç»™å®šä¸€ä¸ªdoubleç±»å‹çš„æµ®ç‚¹æ•°baseå’Œintç±»å‹çš„æ•´æ•°exponentã€‚æ±‚baseçš„exponentæ¬¡æ–¹ã€‚
  *
  */
 public class Test12 {
-	//0ºÍ1µ¥¶ÀÅĞ¶ÏÒ»ÏÂ
+	//0å’Œ1å•ç‹¬åˆ¤æ–­ä¸€ä¸‹
 	public double Power(double base, int exponent) {
 		
 		if (exponent == 0) {

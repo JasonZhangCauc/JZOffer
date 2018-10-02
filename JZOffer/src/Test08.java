@@ -1,15 +1,15 @@
 /**
- * Ò»Ö»ÇàÍÜÒ»´Î¿ÉÒÔÌøÉÏ1¼¶Ì¨½×£¬Ò²¿ÉÒÔÌøÉÏ2¼¶¡£
- * Çó¸ÃÇàÍÜÌøÉÏÒ»¸ön¼¶µÄÌ¨½××Ü¹²ÓÐ¶àÉÙÖÖÌø·¨£¨ÏÈºó´ÎÐò²»Í¬Ëã²»Í¬µÄ½á¹û£©¡£
+ * ä¸€åªé’è›™ä¸€æ¬¡å¯ä»¥è·³ä¸Š1çº§å°é˜¶ï¼Œä¹Ÿå¯ä»¥è·³ä¸Š2çº§ã€‚
+ * æ±‚è¯¥é’è›™è·³ä¸Šä¸€ä¸ªnçº§çš„å°é˜¶æ€»å…±æœ‰å¤šå°‘ç§è·³æ³•ï¼ˆå…ˆåŽæ¬¡åºä¸åŒç®—ä¸åŒçš„ç»“æžœï¼‰ã€‚
  * 
  *
  */
 public class Test08 {
 	/**
 	 * 
-	 * ¼ÙÉèn¼¶Ì¨½×£¬ÄÇÃ´µÚÒ»²½¾ÍÓÐÁ½ÖÖÇé¿ö£¬ÌøÒ»²½£¬¸úÌøÁ½²½¡£
-	 * Çé¿öÒ»£ºÌøÒ»²½£¬ÄÇÃ´½ÓÏÂÈ¥µÄ¾ÍÊÇJumpFloor(target-1);
-	 * Çé¿ö¶þ£ºÌøÁ½²½£¬ÄÇÃ´½ÓÏÂÈ¥µÄ¾ÍÊÇJumpFloor(target-2)¡£
+	 * å‡è®¾nçº§å°é˜¶ï¼Œé‚£ä¹ˆç¬¬ä¸€æ­¥å°±æœ‰ä¸¤ç§æƒ…å†µï¼Œè·³ä¸€æ­¥ï¼Œè·Ÿè·³ä¸¤æ­¥ã€‚
+	 * æƒ…å†µä¸€ï¼šè·³ä¸€æ­¥ï¼Œé‚£ä¹ˆæŽ¥ä¸‹åŽ»çš„å°±æ˜¯JumpFloor(target-1);
+	 * æƒ…å†µäºŒï¼šè·³ä¸¤æ­¥ï¼Œé‚£ä¹ˆæŽ¥ä¸‹åŽ»çš„å°±æ˜¯JumpFloor(target-2)ã€‚
 	 * 
 	 */
     public int JumpFloor(int target) {
