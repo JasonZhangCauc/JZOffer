@@ -1,4 +1,4 @@
-# JZOffer
+:earth_africa:# JZOffer
 
 剑指offer编程全部试题，java实现
 ===============
@@ -63,7 +63,7 @@
 | [第52题：硅谷和国内的软件开发工程师到底有何不同？](https://github.com/JasonZhangCauc/JZOffer/blob/master/JZOffer/src/Test52.java)                                                                                                                                                 |
 
 
-个人博客
+:squirrel:个人博客
 
 [请戳这里](http://www.jmzhang.top)
 
