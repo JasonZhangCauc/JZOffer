@@ -2,7 +2,7 @@ import java.util.Stack;
 
 /**
  * 
- * 栈的压入、弹出序列
+ *  剑指offer编程题（JAVA实现)——第21题：栈的压入、弹出序列
  * 
  * 题目描述
  * 输入两个整数序列，第一个序列表示栈的压入顺序，请判断第二个序列是否可能为该栈的弹出顺序。
@@ -25,7 +25,9 @@ public class Test21 {
 	}
 
 	public static boolean IsPopOrder(int[] pushA, int[] popA) {
-		if (pushA == null || popA == null || pushA.length == 0 || popA.length == 0 || pushA.length != popA.length) {
+		if (pushA == null || popA == null ||
+				pushA.length == 0 || popA.length == 0 ||
+				pushA.length != popA.length) {
 			return false;
 		}
 		Stack<Integer> stack = new Stack<>();
